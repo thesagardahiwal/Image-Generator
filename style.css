@@ -7,6 +7,7 @@
 }
 body{
     width: 100%;
+    background-color: rgb(53, 53, 53);
    
 }
 .home{
@@ -21,6 +22,7 @@ body{
     font-weight: 600;
     font-size: 5vw;
     margin: 50px 0;
+    color: aliceblue;
 }
 button{
     border-radius: 10px;
@@ -29,11 +31,16 @@ button{
     width: 6vw;
     border: 1px solid rgb(206, 206, 206);
     cursor: pointer;
-    background-color: rgb(125, 203, 8);
+    background-color: rgb(8, 151, 203);
+    transition: .5s;
+}
+button:hover{
+    background-color: rgb(0, 122, 252);
 }
 #search-input{
     border: 1px solid rgb(206, 206, 206);
     background-color: white;
+    letter-spacing: .1vw;
     color: black;
     width: 30vw;
     border-radius: 10px;
@@ -79,14 +86,15 @@ button{
 .search-reasults .reasult .tag{
     text-decoration: none;
     width: fit-content;
-    padding: 1.5vw;
+    scale: .8;
+    padding: 1.2vw;
     border-radius: 10px;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(125, 203, 8);
     transition: .5s;
 }
 .search-reasults .reasult .tag a {
     text-decoration: none;
-    color: rgb(192, 192, 192);
+    color: aliceblue;
     transition: .5s;
 }
 .search-reasults .reasult .tag a:hover{
@@ -94,7 +102,7 @@ button{
 }
 .search-reasults .reasult .tag:hover{
     color: rgb(255, 255, 255);
-    background-color: rgb(79, 79, 79);
+    background-color: lawngreen;
     cursor: pointer;
 }
 
@@ -134,5 +142,5 @@ button{
     margin: 50px;
     font-weight: 400;
     opacity: 60%;
-    display: block;
+    display: none;
 }
